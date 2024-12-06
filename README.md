@@ -39,9 +39,9 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 	1. Create a .env file in the project root
 	2. Add your API key:
-```
+	```
 	KRAKENFLEX_API_KEY=your_api_key_here
-```
+	```
 
 4. Use the makefile to run the programme, test the programme, clean temp files and install dependencies
 
