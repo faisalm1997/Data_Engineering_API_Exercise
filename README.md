@@ -51,8 +51,8 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 #### Run the script
 ```make run```
 
-```make test```
 #### Run tests
+```make test```
 
 #### Lint the code
 ```make lint```
