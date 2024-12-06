@@ -1,4 +1,5 @@
 import os
+import json
 import requests
 import logging
 from datetime import datetime, timezone
@@ -139,7 +140,9 @@ def main():
         api.post_site_outages(site_id, filtered_outages)
         
         logger.info(f"Successfully processed {len(filtered_outages)} outages for {site_id}")
-    
+        logger.debug("Outages being posted:\n%s", json.dumps(filtered_outages, indent=4))
+        logger.info("Processing completed successfully")
+
     except Exception as e:
         logger.error(f"Processing failed: {e}")
         raise
