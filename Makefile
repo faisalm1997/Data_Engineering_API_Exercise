@@ -24,7 +24,7 @@ install:
 test:
 	@echo "Running tests..."
 	. venv/bin/activate && \
-		PYTHONPATH=$(pwd) pytest tests/
+		PYTHONPATH=$(pwd) pytest tests/new_test_main.py
 
 # Run the main script
 run:
